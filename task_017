@@ -1,0 +1,29 @@
+// Задание 17
+// Напишите функцию, которая принимает массив и примитивное значение и возвращает true, если такое значение в массиве есть, и строку "Значение не найдено" в обратном случае.
+// ПРИМЕР:
+// findValue([2, 4, 6, 8, 10], 2) //true
+// findValue([false, "1", 42], 1) //"Значение не найдено"
+
+// 1. Решение через цикл
+function findValue(arr, num) {
+  for (let i = 0; i < arr.length; i++) {
+    if (arr[i] === num) {
+      return true;
+    }
+    return 'Значение не найдено';
+  }
+}
+console.log(findValue([2, 4, 6, 8, 10], 2));
+console.log(findValue([false, '1', 42], 1));
+
+// 2. Решение через метод
+function findValue(arr, num) {
+  for (let i = 0; i < arr.length; i++) {
+    if (arr.includes(num)) {
+      return true;
+    }
+    return 'Значение не найдено';
+  }
+}
+console.log(findValue([2, 4, 6, 8, 10], 2));
+console.log(findValue([false, '1', 42], 1));
