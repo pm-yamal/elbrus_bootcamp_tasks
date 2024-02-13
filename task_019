@@ -1,0 +1,14 @@
+// Задание 19
+// Напиши функцию, которая, принимая число num, возвращает массив чисел от 0 до num, которые делятся на 2, но не делятся на 3.
+// ПРИМЕР: listOfNumber(20) -> [2, 4, 8, 10, 14, 16, 20]
+
+function listOfNumber(num) {
+  const arrNum = [];
+  for (let i = 0; i <= num; i++) {
+    if (i % 2 === 0 && i % 3 !== 0) {
+      arrNum.push(i);
+    }
+  }
+  return arrNum;
+}
+console.log(listOfNumber(20));
