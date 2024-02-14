@@ -1,0 +1,12 @@
+// Задание 18
+// Напишите функцию, которая принимает n (положительное целое число) и возвращает сумму всех целых чисел от 1 до n.
+// ПРИМЕР: sumOfRange(3) //6 (1+2+3)
+
+function sumOfRange(n) {
+  let sum = 0;
+  for (let i = 0; i <= n; i++) {
+    sum += i;
+  }
+  return sum;
+}
+console.log(sumOfRange(3));
