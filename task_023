@@ -1,0 +1,8 @@
+// Задание 23
+// Напишите функцию, которая x возведет в степень y.
+// ПРИМЕР: powerOf(2, 10) //1024
+
+function powerOf(x, y) {
+  return x ** y;
+}
+console.log(powerOf(2, 10));
