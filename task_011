@@ -1,0 +1,16 @@
+// Задание 11
+// Напишите функцию, которая принимает на вход целое число и возвращает его же в обратном порядке.
+// ПРИМЕР:
+// reverseNumber(543) //345
+// reverseNumber(1342) //2431
+
+function reverseNumber(num) {
+  let str = '';
+  str = num.toString();
+  let str2 = '';
+  for (let i = str.length - 1; i >= 0; i--) {
+    str2 += str[i];
+  }
+  return str2;
+}
+console.log(Number(reverseNumber(543)));
