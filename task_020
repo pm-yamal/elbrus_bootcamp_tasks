@@ -1,0 +1,12 @@
+// Задание 20
+// Напишите функцию, которая принимает на вход массив строк и возвращает новый массив строк, в котором каждая строка начинается с большой буквы.
+// ПРИМЕР: capitalizeArrayStr(["hello", "hi", "how are you"]) //["Hello", "Hi", "How are you"]
+
+function capitalizeArrayStr(arr) {
+  let arr2 = [];
+  for (let i = 0; i < arr.length; i++) {
+    arr2[i] = arr[i].slice(0, 1).toUpperCase() + arr[i].slice(1);
+  }
+  return arr2;
+}
+console.log(capitalizeArrayStr(['hello', 'hi', 'how are you']));
