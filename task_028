@@ -1,0 +1,14 @@
+// Задание 28
+// Напишите функцию, которая принимает число и проверяет, является ли оно простым (имеет только два делителя: 1 и само число). Функция должна вернуть true, если число простое, и false в противном случае.
+// Пример:
+// isPrimeNumber(7); // => true
+// isPrimeNumber(12); // => false
+
+function isPrimeNumber(num) {
+  if (num % 1 === 0 && num % num === 0 && num % 2 !==0) {
+    return true
+  }
+  else return false
+}
+console.log(isPrimeNumber(7));
+console.log(isPrimeNumber(12));
