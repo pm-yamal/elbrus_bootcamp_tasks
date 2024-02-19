@@ -1,0 +1,11 @@
+//Задание 30
+// Напиши функцию, которая принимает строку и возвращает новую строку, в которой все буквы будут в верхнем регистре.
+// Например: "hello" → "HELLO"; "JavaScript" → "JAVASCRIPT".
+
+function wordCapitalize(str) {
+  let strNew = '';
+  strNew = str.toUpperCase();
+  return strNew;
+}
+console.log(wordCapitalize('hello'));
+console.log(wordCapitalize('JavaScript'));
