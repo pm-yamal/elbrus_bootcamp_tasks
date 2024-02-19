@@ -1,0 +1,14 @@
+// Задание 12
+// Напиши функцию, которая в массиве имен находит и возвращает массив имен в которых не больше 4 букв.
+// ПРИМЕР: cutLongNames(['Kate', 'Bob', 'Jaden', 'Max', 'Angelina', 'Sveta'])
+
+function cutLongNames(names) {
+  const namesNew = [];
+  for (let i = 0; i < names.length; i++) {
+    if (names[i].length <= 4) {
+      namesNew.push(names[i]);
+    }
+  }
+  return namesNew;
+}
+console.log(cutLongNames(['Kate', 'Bob', 'Jaden', 'Max', 'Angelina', 'Sveta']));
