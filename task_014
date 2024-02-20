@@ -1,0 +1,15 @@
+// Задание 14
+// Первые подсчеты показали, что приземление будет в Австралии, где все наоборот. Напишите функцию, которая переводит положительные числа в отрицательные.
+// ПРИМЕР:
+// oppositeNumber(-4) //(-4);
+// oppositeNumber(0.2) //(-0.2);
+
+function oppositeNumber(num) {
+  if (num > 0) {
+    num = -num;
+    return num;
+  }
+  return num;
+}
+console.log(oppositeNumber(-4));
+console.log(oppositeNumber(0.2));
