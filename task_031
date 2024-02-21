@@ -1,0 +1,15 @@
+// Задание 31
+// Написать функцию, которая принимает число (длину) и возвращает строку чередующихся 1 и 0 по указанной длине. Строка должна начинаться с 1.
+// ПРИМЕР: (3) -> "101", (6) -> "101010"
+
+function getZeroAndOne(num) {
+  let str = "";
+  let count = 0;
+  for (let i = 0; i < num; i++) {
+    if (count === 0) {
+      count = 1;
+    } else count = 0;
+    str = str + count;
+  } return str;
+}
+console.log(getZeroAndOne(6));
