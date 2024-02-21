@@ -1,0 +1,13 @@
+// Задание 21
+// Напишите функцию, которая удалит восклицательные знаки (!) в строке и вернет новую.
+// ПРИМЕР: removeExclamation('Elbrus! Hello!!') //'Elbrus Hello'
+
+function removeExclamation(str) {
+  let strNew = '';
+  for (let i = 0; i < str.length; i++) {
+    if (str[i] !== '!') {
+      strNew += str[i];
+    }
+  } return strNew;
+}
+console.log(removeExclamation('Elbrus! Hello!!'));
