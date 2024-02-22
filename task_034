@@ -4,7 +4,7 @@
 // [1, -4, 7, 12] -> 1 + 7 + 12 = 20;
 // [-1, -2, -3] -> 0.
 
-function sumPoistive(arr) {
+function getSumPositive(arr) {
   let count = 0;
   for (let i = 0; i < arr.length; i++) {
     if (arr[i] > 0) {
@@ -13,5 +13,6 @@ function sumPoistive(arr) {
   }
   return count;
 }
-console.log(sumPoistive([1, -4, 7, 12]));
-console.log(sumPoistive([-1, -2, -3]));
+console.log(getSumPositive([1, -4, 7, 12]));
+console.log(getSumPositive([-1, -2, -3]));
+console.log(getSumPositive([-1, -2, -3, 1]));
