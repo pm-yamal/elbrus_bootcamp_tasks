@@ -1,0 +1,17 @@
+// Задание 35
+// Написать функцию, которая принимает массив оценок (от 1 до 5) и возвращает среднюю с округлением в меньшую сторону.
+// ПРИМЕР:
+// [2, 2, 2, 2] -> 2;
+// [1, 2, 3, 4, 5] -> 3;
+// [3, 4, 4, 4, 4, 4, 5] -> 4;
+
+function getAverage(arr) {
+  let average = 0;
+  for (let i = 0; i < arr.length; i++) {
+    average += arr[i] / arr.length;
+  }
+  return Math.floor(average);
+}
+console.log(getAverage([2, 2, 2, 2]));
+console.log(getAverage([1, 2, 3, 4, 5]));
+console.log(getAverage([3, 4, 4, 4, 4, 4, 5]));
