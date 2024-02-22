@@ -1,0 +1,17 @@
+// Задание 34
+// Написать функцию, которая принимет массив и возвращает сумму положительных чисел. Если суммировать нечего, выводит 0.
+// ПРИМЕР:
+// [1, -4, 7, 12] -> 1 + 7 + 12 = 20;
+// [-1, -2, -3] -> 0.
+
+function sumPoistive(arr) {
+  let count = 0;
+  for (let i = 0; i < arr.length; i++) {
+    if (arr[i] > 0) {
+      count += arr[i];
+    }
+  }
+  return count;
+}
+console.log(sumPoistive([1, -4, 7, 12]));
+console.log(sumPoistive([-1, -2, -3]));
