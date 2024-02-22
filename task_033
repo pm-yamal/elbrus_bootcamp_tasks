@@ -1,18 +1,18 @@
-// Задание 33
-// Напиши функцию, которая принимает число и определяет, является ли оно простым (имеет только два делителя - 1 и само число). 
-// Функция должна вернуть true, если число простое, и false в противном случае.
-// Например: 7 → true; 10 → false.
+// Задание 34
+// Написать функцию, которая принимет массив и возвращает сумму положительных чисел. Если суммировать нечего, выводит 0.
+// ПРИМЕР:
+// [1, -4, 7, 12] -> 1 + 7 + 12 = 20;
+// [-1, -2, -3] -> 0.
 
-function simpleNum(num) {
-  if (num % num === 0 && num % 1 === 0 && num % 2 !== 0 && num % 3 !== 0) {
-    return true;
+function getSumPositive(arr) {
+  let count = 0;
+  for (let i = 0; i < arr.length; i++) {
+    if (arr[i] > 0) {
+      count += arr[i];
+    }
   }
-  return false;
+  return count;
 }
-console.log(simpleNum(7));
-console.log(simpleNum(10));
-console.log(simpleNum(4));
-console.log(simpleNum(9));
-console.log(simpleNum(12));
-console.log(simpleNum(11));
-console.log(simpleNum(5));
+console.log(getSumPositive([1, -4, 7, 12]));
+console.log(getSumPositive([-1, -2, -3]));
+console.log(getSumPositive([-1, -2, -3, 1]));
