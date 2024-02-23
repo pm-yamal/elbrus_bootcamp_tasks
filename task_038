@@ -3,17 +3,13 @@
 // ПРИМЕР: someFn([1, 2, 3, 4, 5, 6]) -> [12, 9]
 
 function getArr(arr) {
-  const getSumNum = [];
-  let sum1 = 0;
-  let sum2 = 0;
+  const getSumNum = [0, 0];
+
   for (let i = 0; i < arr.length; i++) {
     if (arr[i] % 2 === 0) {
-      sum1 += arr[i];
-      getSumNum[0] = sum1;
-    }
-    if (arr[i] & (2 !== 0)) {
-      sum2 += arr[i];
-      getSumNum[1] = sum2;
+      getSumNum[0] += arr[i];
+    } else {
+      getSumNum[1] += arr[i];
     }
   }
   return getSumNum;
