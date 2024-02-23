@@ -1,0 +1,16 @@
+// Задание 36
+// Написать функцию, которая принимает число и возвращает чередующиеся слова 'yes' и 'no' столько раз чему равен параметр.
+// ПРИМЕР: someFn(7) -> 'yesnoyesnoyesnoyes'
+
+function someFn(num) {
+  let str = '';
+  for (let i = 0; i < num; i++) {
+    if (i % 2 === 0) {
+      str += 'yes';
+    } else {
+      str += 'no';
+    }
+  }
+  return str;
+}
+console.log(someFn(7));
