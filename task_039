@@ -1,0 +1,18 @@
+//Задание 39.
+// Напиши функцию, которая принимает число и определяет, является ли оно простым(имеет только два делителя - 1 и само число). Функция должна вернуть true, если число простое, и false в противном случае.
+// Например: 7 → true; 10 → false.
+
+function simpleNum(num) {
+  if (num % num === 0 && num % 1 === 0 && num % 2 !== 0 && num % 3 !== 0) {
+    return true;
+  } else {
+    return false;
+  }
+}
+console.log(simpleNum(7));
+console.log(simpleNum(11));
+console.log(simpleNum(6));
+console.log(simpleNum(10));
+console.log(simpleNum(12));
+console.log(simpleNum(15));
+console.log(simpleNum(19));
