@@ -1,0 +1,14 @@
+// Задание 41.
+// Напиши функцию, которая принимает начало и конец числового диапазона и возвращает все целые числа от начала до конца включительно.
+// Например: (1, 5) → [1, 2, 3, 4, 5].
+
+function getInteger(num1, num2) {
+  const arr = [];
+  for (let i = num1; i <= num2; i++) {
+    arr.push(i);
+  }
+  return arr;
+}
+console.log(getInteger(1, 5));
+console.log(getInteger(-10, 5));
+console.log(getInteger(20, 31));
