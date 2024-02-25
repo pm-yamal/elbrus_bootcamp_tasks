@@ -1,0 +1,15 @@
+// Задание 42.
+// Напишите функцию, которая принимает массив чисел и возвращает новый массив, содержащий только числа, которые делятся на 3 и 5 одновременно.
+// ПРИМЕР:
+// getNumbersDivisibleBy3And5([15, 7, 10, 30, 45, 8, 20]); // => [15, 30, 45]
+
+function getNumbersDivisibleBy3And5(arr) {
+  const arrNew = [];
+  for (let i = 0; i < arr.length; i++) {
+    if (arr[i] % 3 === 0 && arr[i] % 5 === 0) {
+      arrNew.push(arr[i]);
+    }
+  }
+  return arrNew;
+}
+console.log(getNumbersDivisibleBy3And5([15, 7, 10, 30, 45, 8, 20]));
