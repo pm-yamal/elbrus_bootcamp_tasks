@@ -1,0 +1,13 @@
+// Задание 43.
+// Напиши функцию, которая принимает число и проверяет, является ли оно положительным и четным. Функция должна вернуть true, если число положительное и четное, и false в противном случае.
+// ПРИМЕР: 10 → true; -7 → false.
+
+function getPositiveAndEven(num) {
+  if (num > 0 && num % 2 === 0) {
+    return true;
+  } else {
+    return false;
+  }
+}
+console.log(getPositiveAndEven(10));
+console.log(getPositiveAndEven(-7));
